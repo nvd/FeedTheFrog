@@ -502,6 +502,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D69038914796E2A004A426E /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MainMenu;
+			sourceTree = "<group>";
+		};
+		1D69038A14796E34004A426E /* Options */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Options;
+			sourceTree = "<group>";
+		};
 		1DFA050E1479254A00549AE4 = {
 			isa = PBXGroup;
 			children = (
@@ -1077,6 +1091,8 @@
 		1DFA070D1479454700549AE4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				1D69038A14796E34004A426E /* Options */,
+				1D69038914796E2A004A426E /* MainMenu */,
 				1DFA06F81479254D00549AE4 /* HelloWorldLayer.h */,
 				1DFA06F91479254D00549AE4 /* HelloWorldLayer.mm */,
 			);
