@@ -154,14 +154,17 @@
 		1DFA06E81479254D00549AE4 /* b2RevoluteJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA06E71479254D00549AE4 /* b2RevoluteJoint.cpp */; };
 		1DFA06EB1479254D00549AE4 /* b2WeldJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA06EA1479254D00549AE4 /* b2WeldJoint.cpp */; };
 		1DFA06F11479254D00549AE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA06F01479254D00549AE4 /* main.m */; };
-		1DFA06F41479254D00549AE4 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA06F31479254D00549AE4 /* AppDelegate.mm */; };
+		1DFA06F41479254D00549AE4 /* FeedTheFrogAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA06F31479254D00549AE4 /* FeedTheFrogAppDelegate.mm */; };
 		1DFA06F71479254D00549AE4 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA06F61479254D00549AE4 /* RootViewController.m */; };
 		1DFA06FA1479254D00549AE4 /* HelloWorldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA06F91479254D00549AE4 /* HelloWorldLayer.mm */; };
 		1DFA06FD1479254D00549AE4 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA06FC1479254D00549AE4 /* GLES-Render.mm */; };
 		1DFA07001479254D00549AE4 /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DFA06FF1479254D00549AE4 /* blocks.png */; };
+		1DFA0710147946BB00549AE4 /* GameManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA070F147946BB00549AE4 /* GameManager.mm */; };
+		1DFA071E14794B5600549AE4 /* GameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA071D14794B5600549AE4 /* GameObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D69038714794EEA004A426E /* CommonProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonProtocols.h; sourceTree = "<group>"; };
 		1DFA05191479254A00549AE4 /* FeedTheFrog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedTheFrog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DFA051D1479254A00549AE4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1DFA051F1479254A00549AE4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -463,8 +466,8 @@
 		1DFA06ED1479254D00549AE4 /* LICENSE_Box2D.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE_Box2D.txt; path = libs/LICENSE_Box2D.txt; sourceTree = "<group>"; };
 		1DFA06EF1479254D00549AE4 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		1DFA06F01479254D00549AE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1DFA06F21479254D00549AE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1DFA06F31479254D00549AE4 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		1DFA06F21479254D00549AE4 /* FeedTheFrogAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedTheFrogAppDelegate.h; sourceTree = "<group>"; };
+		1DFA06F31479254D00549AE4 /* FeedTheFrogAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FeedTheFrogAppDelegate.mm; sourceTree = "<group>"; };
 		1DFA06F51479254D00549AE4 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		1DFA06F61479254D00549AE4 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		1DFA06F81479254D00549AE4 /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
@@ -473,6 +476,11 @@
 		1DFA06FC1479254D00549AE4 /* GLES-Render.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "GLES-Render.mm"; sourceTree = "<group>"; };
 		1DFA06FE1479254D00549AE4 /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		1DFA06FF1479254D00549AE4 /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blocks.png; path = Resources/blocks.png; sourceTree = "<group>"; };
+		1DFA070E147946BB00549AE4 /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameManager.h; sourceTree = "<group>"; };
+		1DFA070F147946BB00549AE4 /* GameManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameManager.mm; sourceTree = "<group>"; };
+		1DFA07131479498800549AE4 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		1DFA071C14794B5600549AE4 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
+		1DFA071D14794B5600549AE4 /* GameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -529,14 +537,12 @@
 		1DFA052D1479254A00549AE4 /* FeedTheFrog */ = {
 			isa = PBXGroup;
 			children = (
-				1DFA06F21479254D00549AE4 /* AppDelegate.h */,
-				1DFA06F31479254D00549AE4 /* AppDelegate.mm */,
+				1DFA07071479280900549AE4 /* Images */,
+				1DFA07081479280D00549AE4 /* Plists */,
+				1DFA07061479280500549AE4 /* Sounds */,
+				1DFA07091479283800549AE4 /* Src */,
 				1DFA06F51479254D00549AE4 /* RootViewController.h */,
 				1DFA06F61479254D00549AE4 /* RootViewController.m */,
-				1DFA06F81479254D00549AE4 /* HelloWorldLayer.h */,
-				1DFA06F91479254D00549AE4 /* HelloWorldLayer.mm */,
-				1DFA06FB1479254D00549AE4 /* GLES-Render.h */,
-				1DFA06FC1479254D00549AE4 /* GLES-Render.mm */,
 				1DFA06FE1479254D00549AE4 /* GameConfig.h */,
 				1DFA052E1479254A00549AE4 /* Resources */,
 				1DFA05421479254B00549AE4 /* libs */,
@@ -1003,6 +1009,89 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1DFA07061479280500549AE4 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sounds;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		1DFA07071479280900549AE4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		1DFA07081479280D00549AE4 /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Plists;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		1DFA07091479283800549AE4 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				1DFA0711147948BD00549AE4 /* GameObjects */,
+				1DFA070D1479454700549AE4 /* Scenes */,
+				1DFA070C1479438000549AE4 /* Constants */,
+				1DFA070B1479434200549AE4 /* Box2D */,
+				1DFA070A1479286C00549AE4 /* Singletons */,
+			);
+			name = Src;
+			sourceTree = "<group>";
+		};
+		1DFA070A1479286C00549AE4 /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				1DFA06F21479254D00549AE4 /* FeedTheFrogAppDelegate.h */,
+				1DFA06F31479254D00549AE4 /* FeedTheFrogAppDelegate.mm */,
+				1DFA070E147946BB00549AE4 /* GameManager.h */,
+				1DFA070F147946BB00549AE4 /* GameManager.mm */,
+			);
+			name = Singletons;
+			sourceTree = "<group>";
+		};
+		1DFA070B1479434200549AE4 /* Box2D */ = {
+			isa = PBXGroup;
+			children = (
+				1DFA06FB1479254D00549AE4 /* GLES-Render.h */,
+				1DFA06FC1479254D00549AE4 /* GLES-Render.mm */,
+			);
+			name = Box2D;
+			sourceTree = "<group>";
+		};
+		1DFA070C1479438000549AE4 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				1DFA07131479498800549AE4 /* Constants.h */,
+				1D69038714794EEA004A426E /* CommonProtocols.h */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		1DFA070D1479454700549AE4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1DFA06F81479254D00549AE4 /* HelloWorldLayer.h */,
+				1DFA06F91479254D00549AE4 /* HelloWorldLayer.mm */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		1DFA0711147948BD00549AE4 /* GameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				1DFA071C14794B5600549AE4 /* GameObject.h */,
+				1DFA071D14794B5600549AE4 /* GameObject.m */,
+			);
+			name = GameObjects;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1200,10 +1289,12 @@
 				1DFA06E81479254D00549AE4 /* b2RevoluteJoint.cpp in Sources */,
 				1DFA06EB1479254D00549AE4 /* b2WeldJoint.cpp in Sources */,
 				1DFA06F11479254D00549AE4 /* main.m in Sources */,
-				1DFA06F41479254D00549AE4 /* AppDelegate.mm in Sources */,
+				1DFA06F41479254D00549AE4 /* FeedTheFrogAppDelegate.mm in Sources */,
 				1DFA06F71479254D00549AE4 /* RootViewController.m in Sources */,
 				1DFA06FA1479254D00549AE4 /* HelloWorldLayer.mm in Sources */,
 				1DFA06FD1479254D00549AE4 /* GLES-Render.mm in Sources */,
+				1DFA0710147946BB00549AE4 /* GameManager.mm in Sources */,
+				1DFA071E14794B5600549AE4 /* GameObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1256,8 +1347,10 @@
 				GCC_PREFIX_HEADER = FeedTheFrog/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = FeedTheFrog/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "\"FeedTheFrog/libs\"";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1272,8 +1365,10 @@
 				GCC_PREFIX_HEADER = FeedTheFrog/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = FeedTheFrog/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "\"FeedTheFrog/libs\"";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -1299,6 +1394,7 @@
 				1DFA07051479254D00549AE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

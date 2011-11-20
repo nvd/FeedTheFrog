@@ -8,12 +8,12 @@
 
 #import "cocos2d.h"
 
-#import "AppDelegate.h"
+#import "FeedTheFrogAppDelegate.h"
 #import "GameConfig.h"
 #import "HelloWorldLayer.h"
 #import "RootViewController.h"
 
-@implementation AppDelegate
+@implementation FeedTheFrogAppDelegate
 
 @synthesize window;
 
