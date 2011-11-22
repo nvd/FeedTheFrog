@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D69038D147AD276004A426E /* AudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D69038C147AD276004A426E /* AudioManager.m */; };
 		1DFA051E1479254A00549AE4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFA051D1479254A00549AE4 /* QuartzCore.framework */; };
 		1DFA05201479254A00549AE4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFA051F1479254A00549AE4 /* OpenGLES.framework */; };
 		1DFA05221479254A00549AE4 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFA05211479254A00549AE4 /* OpenAL.framework */; };
@@ -165,6 +166,8 @@
 
 /* Begin PBXFileReference section */
 		1D69038714794EEA004A426E /* CommonProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonProtocols.h; sourceTree = "<group>"; };
+		1D69038B147AD276004A426E /* AudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioManager.h; sourceTree = "<group>"; };
+		1D69038C147AD276004A426E /* AudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioManager.m; sourceTree = "<group>"; };
 		1DFA05191479254A00549AE4 /* FeedTheFrog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedTheFrog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DFA051D1479254A00549AE4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1DFA051F1479254A00549AE4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -1062,6 +1065,8 @@
 		1DFA070A1479286C00549AE4 /* Singletons */ = {
 			isa = PBXGroup;
 			children = (
+				1D69038B147AD276004A426E /* AudioManager.h */,
+				1D69038C147AD276004A426E /* AudioManager.m */,
 				1DFA06F21479254D00549AE4 /* FeedTheFrogAppDelegate.h */,
 				1DFA06F31479254D00549AE4 /* FeedTheFrogAppDelegate.mm */,
 				1DFA070E147946BB00549AE4 /* GameManager.h */,
@@ -1311,6 +1316,7 @@
 				1DFA06FD1479254D00549AE4 /* GLES-Render.mm in Sources */,
 				1DFA0710147946BB00549AE4 /* GameManager.mm in Sources */,
 				1DFA071E14794B5600549AE4 /* GameObject.m in Sources */,
+				1D69038D147AD276004A426E /* AudioManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

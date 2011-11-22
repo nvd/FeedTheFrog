@@ -12,6 +12,8 @@
 #import "GameConfig.h"
 #import "HelloWorldLayer.h"
 #import "RootViewController.h"
+#import "GameManager.h"
+#import "AudioManager.h"
 
 @implementation FeedTheFrogAppDelegate
 
@@ -109,6 +111,8 @@
 	
 	// Removes the startup flicker
 	[self removeStartupFlicker];
+    
+    [[AudioManager sharedAudioManager] setupAudioEngine];
 	
 	// Run the intro Scene
 	[[CCDirector sharedDirector] runWithScene: [HelloWorldLayer scene]];
