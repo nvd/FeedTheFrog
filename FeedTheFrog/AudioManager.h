@@ -24,7 +24,7 @@
 @property (nonatomic, retain) NSMutableDictionary *listOfSoundEffectFiles;
 @property (nonatomic, retain) NSMutableDictionary *soundEffectsState;
 
-+(AudioManager*)sharedAudioManager;                                  
++(AudioManager*)sharedAudioManager;
 -(void)setupAudioEngine;
 
 -(void)playBackgroundTrack:(NSString*) trackFileName;

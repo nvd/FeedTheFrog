@@ -115,7 +115,8 @@
     [[AudioManager sharedAudioManager] setupAudioEngine];
 	
 	// Run the intro Scene
-	[[CCDirector sharedDirector] runWithScene: [HelloWorldLayer scene]];
+	//[[CCDirector sharedDirector] runWithScene: [HelloWorldLayer scene]];
+    [[GameManager sharedGameManager] runSceneWithID:kMainMenuScene];
 }
 
 

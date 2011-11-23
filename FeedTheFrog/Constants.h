@@ -3,6 +3,8 @@
 //  FeedTheFrog
 //
 
+#define kMainMenuTagValue 10
+
 typedef enum {
     kNoSceneInitialized=0,
     kMainMenuScene=1,

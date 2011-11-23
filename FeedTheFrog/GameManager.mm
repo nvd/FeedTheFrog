@@ -5,6 +5,8 @@
 
 #import "GameManager.h"
 #import "AudioManager.h"
+#import "MainMenuScene.h"
+#import "OptionsScene.h"
 
 @implementation GameManager
 static GameManager* _sharedGameManager = nil;                      
@@ -152,10 +154,10 @@ static GameManager* _sharedGameManager = nil;
     id sceneToRun = nil;
     switch (sceneID) {
         case kMainMenuScene: 
-            //sceneToRun = [MainMenuScene node];
+            sceneToRun = [MainMenuScene node];
             break;
         case kOptionsScene:
-            //sceneToRun = [OptionsScene node];
+            sceneToRun = [OptionsScene node];
             break;
         case kOriginalGameScene:
             //sceneToRun = [CreditsScene node];

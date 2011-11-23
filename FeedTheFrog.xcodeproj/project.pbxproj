@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		1D69038D147AD276004A426E /* AudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D69038C147AD276004A426E /* AudioManager.m */; };
+		1D6903A2147BA2AD004A426E /* MainMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903A1147BA2AD004A426E /* MainMenuScene.m */; };
+		1D6903A5147BA348004A426E /* MainMenuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903A4147BA348004A426E /* MainMenuLayer.m */; };
+		1D6903AF147C0892004A426E /* OptionsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903AE147C0892004A426E /* OptionsLayer.m */; };
+		1D6903B2147C08AA004A426E /* OptionsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903B1147C08AA004A426E /* OptionsScene.m */; };
+		1D6903B4147C0ECC004A426E /* MainMenuBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6903B3147C0ECC004A426E /* MainMenuBackground.png */; };
+		1D6903B9147C1C1F004A426E /* OptionsButtonSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6903B5147C1C1E004A426E /* OptionsButtonSelected.png */; };
+		1D6903BA147C1C1F004A426E /* OptionsButtonNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6903B6147C1C1E004A426E /* OptionsButtonNormal.png */; };
+		1D6903BB147C1C1F004A426E /* PlayGameButtonSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6903B7147C1C1F004A426E /* PlayGameButtonSelected.png */; };
+		1D6903BC147C1C1F004A426E /* PlayGameButtonNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6903B8147C1C1F004A426E /* PlayGameButtonNormal.png */; };
+		1D6903C0147C6B75004A426E /* FeedTheFrogFont.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6903BE147C6B75004A426E /* FeedTheFrogFont.png */; };
+		1D6903C1147C6B75004A426E /* FeedTheFrogFont.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 1D6903BF147C6B75004A426E /* FeedTheFrogFont.fnt */; };
 		1DFA051E1479254A00549AE4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFA051D1479254A00549AE4 /* QuartzCore.framework */; };
 		1DFA05201479254A00549AE4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFA051F1479254A00549AE4 /* OpenGLES.framework */; };
 		1DFA05221479254A00549AE4 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFA05211479254A00549AE4 /* OpenAL.framework */; };
@@ -168,6 +179,21 @@
 		1D69038714794EEA004A426E /* CommonProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonProtocols.h; sourceTree = "<group>"; };
 		1D69038B147AD276004A426E /* AudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioManager.h; sourceTree = "<group>"; };
 		1D69038C147AD276004A426E /* AudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioManager.m; sourceTree = "<group>"; };
+		1D6903A0147BA2AD004A426E /* MainMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuScene.h; sourceTree = "<group>"; };
+		1D6903A1147BA2AD004A426E /* MainMenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuScene.m; sourceTree = "<group>"; };
+		1D6903A3147BA348004A426E /* MainMenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuLayer.h; sourceTree = "<group>"; };
+		1D6903A4147BA348004A426E /* MainMenuLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuLayer.m; sourceTree = "<group>"; };
+		1D6903AD147C0892004A426E /* OptionsLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsLayer.h; sourceTree = "<group>"; };
+		1D6903AE147C0892004A426E /* OptionsLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsLayer.m; sourceTree = "<group>"; };
+		1D6903B0147C08A9004A426E /* OptionsScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsScene.h; sourceTree = "<group>"; };
+		1D6903B1147C08AA004A426E /* OptionsScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsScene.m; sourceTree = "<group>"; };
+		1D6903B3147C0ECC004A426E /* MainMenuBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MainMenuBackground.png; path = FeedTheFrog/Images/Scenes/MainMenu/MainMenuBackground.png; sourceTree = "<group>"; };
+		1D6903B5147C1C1E004A426E /* OptionsButtonSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OptionsButtonSelected.png; path = FeedTheFrog/Images/Scenes/MainMenu/OptionsButtonSelected.png; sourceTree = "<group>"; };
+		1D6903B6147C1C1E004A426E /* OptionsButtonNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OptionsButtonNormal.png; path = FeedTheFrog/Images/Scenes/MainMenu/OptionsButtonNormal.png; sourceTree = "<group>"; };
+		1D6903B7147C1C1F004A426E /* PlayGameButtonSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PlayGameButtonSelected.png; path = FeedTheFrog/Images/Scenes/MainMenu/PlayGameButtonSelected.png; sourceTree = "<group>"; };
+		1D6903B8147C1C1F004A426E /* PlayGameButtonNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PlayGameButtonNormal.png; path = FeedTheFrog/Images/Scenes/MainMenu/PlayGameButtonNormal.png; sourceTree = "<group>"; };
+		1D6903BE147C6B75004A426E /* FeedTheFrogFont.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FeedTheFrogFont.png; path = FeedTheFrog/Images/Fonts/FeedTheFrogFont.png; sourceTree = "<group>"; };
+		1D6903BF147C6B75004A426E /* FeedTheFrogFont.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = FeedTheFrogFont.fnt; path = FeedTheFrog/Images/Fonts/FeedTheFrogFont.fnt; sourceTree = "<group>"; };
 		1DFA05191479254A00549AE4 /* FeedTheFrog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedTheFrog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DFA051D1479254A00549AE4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1DFA051F1479254A00549AE4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -508,6 +534,10 @@
 		1D69038914796E2A004A426E /* MainMenu */ = {
 			isa = PBXGroup;
 			children = (
+				1D6903A0147BA2AD004A426E /* MainMenuScene.h */,
+				1D6903A1147BA2AD004A426E /* MainMenuScene.m */,
+				1D6903A3147BA348004A426E /* MainMenuLayer.h */,
+				1D6903A4147BA348004A426E /* MainMenuLayer.m */,
 			);
 			name = MainMenu;
 			sourceTree = "<group>";
@@ -515,8 +545,48 @@
 		1D69038A14796E34004A426E /* Options */ = {
 			isa = PBXGroup;
 			children = (
+				1D6903B0147C08A9004A426E /* OptionsScene.h */,
+				1D6903B1147C08AA004A426E /* OptionsScene.m */,
+				1D6903AD147C0892004A426E /* OptionsLayer.h */,
+				1D6903AE147C0892004A426E /* OptionsLayer.m */,
 			);
 			name = Options;
+			sourceTree = "<group>";
+		};
+		1D69039F147BA0D9004A426E /* Game */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		1D6903AA147BBAD3004A426E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1D6903AC147BBB09004A426E /* MainMenu */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		1D6903AC147BBB09004A426E /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				1D6903B5147C1C1E004A426E /* OptionsButtonSelected.png */,
+				1D6903B6147C1C1E004A426E /* OptionsButtonNormal.png */,
+				1D6903B7147C1C1F004A426E /* PlayGameButtonSelected.png */,
+				1D6903B8147C1C1F004A426E /* PlayGameButtonNormal.png */,
+				1D6903B3147C0ECC004A426E /* MainMenuBackground.png */,
+			);
+			name = MainMenu;
+			sourceTree = "<group>";
+		};
+		1D6903BD147C2A74004A426E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1D6903BE147C6B75004A426E /* FeedTheFrogFont.png */,
+				1D6903BF147C6B75004A426E /* FeedTheFrogFont.fnt */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		1DFA050E1479254A00549AE4 = {
@@ -1037,6 +1107,8 @@
 		1DFA07071479280900549AE4 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1D6903BD147C2A74004A426E /* Fonts */,
+				1D6903AA147BBAD3004A426E /* Scenes */,
 			);
 			name = Images;
 			path = ..;
@@ -1096,6 +1168,7 @@
 		1DFA070D1479454700549AE4 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				1D69039F147BA0D9004A426E /* Game */,
 				1D69038A14796E34004A426E /* Options */,
 				1D69038914796E2A004A426E /* MainMenu */,
 				1DFA06F81479254D00549AE4 /* HelloWorldLayer.h */,
@@ -1170,6 +1243,13 @@
 				1DFA053E1479254B00549AE4 /* Icon@2x.png in Resources */,
 				1DFA05411479254B00549AE4 /* iTunesArtwork in Resources */,
 				1DFA07001479254D00549AE4 /* blocks.png in Resources */,
+				1D6903B4147C0ECC004A426E /* MainMenuBackground.png in Resources */,
+				1D6903B9147C1C1F004A426E /* OptionsButtonSelected.png in Resources */,
+				1D6903BA147C1C1F004A426E /* OptionsButtonNormal.png in Resources */,
+				1D6903BB147C1C1F004A426E /* PlayGameButtonSelected.png in Resources */,
+				1D6903BC147C1C1F004A426E /* PlayGameButtonNormal.png in Resources */,
+				1D6903C0147C6B75004A426E /* FeedTheFrogFont.png in Resources */,
+				1D6903C1147C6B75004A426E /* FeedTheFrogFont.fnt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1317,6 +1397,10 @@
 				1DFA0710147946BB00549AE4 /* GameManager.mm in Sources */,
 				1DFA071E14794B5600549AE4 /* GameObject.m in Sources */,
 				1D69038D147AD276004A426E /* AudioManager.m in Sources */,
+				1D6903A2147BA2AD004A426E /* MainMenuScene.m in Sources */,
+				1D6903A5147BA348004A426E /* MainMenuLayer.m in Sources */,
+				1D6903AF147C0892004A426E /* OptionsLayer.m in Sources */,
+				1D6903B2147C08AA004A426E /* OptionsScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
