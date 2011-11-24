@@ -9,5 +9,9 @@ typedef enum {
 } CharacterStates;
 
 typedef enum{
-    kObjectTypeNone
+    kObjectTypeNone,
+    kFrog,
+    KFoodFly,
+    kBee,
+    kBulletTimeBonusFly,
 } GameObjectType;

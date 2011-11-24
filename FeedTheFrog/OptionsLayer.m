@@ -2,9 +2,6 @@
 //  OptionsLayer.m
 //  FeedTheFrog
 //
-//  Created by Muhammad Naveed Siddiqui on 23/11/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
 
 #import "OptionsLayer.h"
 #import "GameManager.h"

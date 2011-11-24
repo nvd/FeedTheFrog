@@ -19,6 +19,12 @@
 		1D6903BC147C1C1F004A426E /* PlayGameButtonNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6903B8147C1C1F004A426E /* PlayGameButtonNormal.png */; };
 		1D6903C0147C6B75004A426E /* FeedTheFrogFont.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6903BE147C6B75004A426E /* FeedTheFrogFont.png */; };
 		1D6903C1147C6B75004A426E /* FeedTheFrogFont.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 1D6903BF147C6B75004A426E /* FeedTheFrogFont.fnt */; };
+		1D6903C4147E6A91004A426E /* GameCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903C3147E6A91004A426E /* GameCharacter.m */; };
+		1D6903C7147EB41A004A426E /* Box2DGameCharacter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903C6147EB41A004A426E /* Box2DGameCharacter.mm */; };
+		1D6903CC147EB88A004A426E /* Frog.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903CB147EB88A004A426E /* Frog.mm */; };
+		1D6903CF147EBAEC004A426E /* BaseFly.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903CE147EBAEC004A426E /* BaseFly.m */; };
+		1D6903D5147EBB5E004A426E /* FoodFly.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903D4147EBB5D004A426E /* FoodFly.m */; };
+		1D6903D8147EBB6E004A426E /* Bee.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903D7147EBB6E004A426E /* Bee.m */; };
 		1DFA051E1479254A00549AE4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFA051D1479254A00549AE4 /* QuartzCore.framework */; };
 		1DFA05201479254A00549AE4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFA051F1479254A00549AE4 /* OpenGLES.framework */; };
 		1DFA05221479254A00549AE4 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFA05211479254A00549AE4 /* OpenAL.framework */; };
@@ -194,6 +200,18 @@
 		1D6903B8147C1C1F004A426E /* PlayGameButtonNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PlayGameButtonNormal.png; path = FeedTheFrog/Images/Scenes/MainMenu/PlayGameButtonNormal.png; sourceTree = "<group>"; };
 		1D6903BE147C6B75004A426E /* FeedTheFrogFont.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FeedTheFrogFont.png; path = FeedTheFrog/Images/Fonts/FeedTheFrogFont.png; sourceTree = "<group>"; };
 		1D6903BF147C6B75004A426E /* FeedTheFrogFont.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = FeedTheFrogFont.fnt; path = FeedTheFrog/Images/Fonts/FeedTheFrogFont.fnt; sourceTree = "<group>"; };
+		1D6903C2147E6A91004A426E /* GameCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCharacter.h; sourceTree = "<group>"; };
+		1D6903C3147E6A91004A426E /* GameCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCharacter.m; sourceTree = "<group>"; };
+		1D6903C5147EB41A004A426E /* Box2DGameCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box2DGameCharacter.h; sourceTree = "<group>"; };
+		1D6903C6147EB41A004A426E /* Box2DGameCharacter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Box2DGameCharacter.mm; sourceTree = "<group>"; };
+		1D6903CA147EB88A004A426E /* Frog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Frog.h; sourceTree = "<group>"; };
+		1D6903CB147EB88A004A426E /* Frog.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Frog.mm; sourceTree = "<group>"; };
+		1D6903CD147EBAEC004A426E /* BaseFly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFly.h; sourceTree = "<group>"; };
+		1D6903CE147EBAEC004A426E /* BaseFly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseFly.m; sourceTree = "<group>"; };
+		1D6903D3147EBB5D004A426E /* FoodFly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodFly.h; sourceTree = "<group>"; };
+		1D6903D4147EBB5D004A426E /* FoodFly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodFly.m; sourceTree = "<group>"; };
+		1D6903D6147EBB6E004A426E /* Bee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bee.h; sourceTree = "<group>"; };
+		1D6903D7147EBB6E004A426E /* Bee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bee.m; sourceTree = "<group>"; };
 		1DFA05191479254A00549AE4 /* FeedTheFrog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedTheFrog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DFA051D1479254A00549AE4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1DFA051F1479254A00549AE4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -563,6 +581,7 @@
 		1D6903AA147BBAD3004A426E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				1D6903C9147EB730004A426E /* Game */,
 				1D6903AC147BBB09004A426E /* MainMenu */,
 			);
 			name = Scenes;
@@ -587,6 +606,26 @@
 				1D6903BF147C6B75004A426E /* FeedTheFrogFont.fnt */,
 			);
 			name = Fonts;
+			sourceTree = "<group>";
+		};
+		1D6903C8147EB606004A426E /* Flies */ = {
+			isa = PBXGroup;
+			children = (
+				1D6903CD147EBAEC004A426E /* BaseFly.h */,
+				1D6903CE147EBAEC004A426E /* BaseFly.m */,
+				1D6903D3147EBB5D004A426E /* FoodFly.h */,
+				1D6903D4147EBB5D004A426E /* FoodFly.m */,
+				1D6903D6147EBB6E004A426E /* Bee.h */,
+				1D6903D7147EBB6E004A426E /* Bee.m */,
+			);
+			name = Flies;
+			sourceTree = "<group>";
+		};
+		1D6903C9147EB730004A426E /* Game */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Game;
 			sourceTree = "<group>";
 		};
 		1DFA050E1479254A00549AE4 = {
@@ -1180,8 +1219,15 @@
 		1DFA0711147948BD00549AE4 /* GameObjects */ = {
 			isa = PBXGroup;
 			children = (
+				1D6903C8147EB606004A426E /* Flies */,
 				1DFA071C14794B5600549AE4 /* GameObject.h */,
 				1DFA071D14794B5600549AE4 /* GameObject.m */,
+				1D6903C2147E6A91004A426E /* GameCharacter.h */,
+				1D6903C3147E6A91004A426E /* GameCharacter.m */,
+				1D6903C5147EB41A004A426E /* Box2DGameCharacter.h */,
+				1D6903C6147EB41A004A426E /* Box2DGameCharacter.mm */,
+				1D6903CA147EB88A004A426E /* Frog.h */,
+				1D6903CB147EB88A004A426E /* Frog.mm */,
 			);
 			name = GameObjects;
 			sourceTree = "<group>";
@@ -1401,6 +1447,12 @@
 				1D6903A5147BA348004A426E /* MainMenuLayer.m in Sources */,
 				1D6903AF147C0892004A426E /* OptionsLayer.m in Sources */,
 				1D6903B2147C08AA004A426E /* OptionsScene.m in Sources */,
+				1D6903C4147E6A91004A426E /* GameCharacter.m in Sources */,
+				1D6903C7147EB41A004A426E /* Box2DGameCharacter.mm in Sources */,
+				1D6903CC147EB88A004A426E /* Frog.mm in Sources */,
+				1D6903CF147EBAEC004A426E /* BaseFly.m in Sources */,
+				1D6903D5147EBB5E004A426E /* FoodFly.m in Sources */,
+				1D6903D8147EBB6E004A426E /* Bee.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
