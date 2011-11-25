@@ -22,15 +22,18 @@
 		1D6903C4147E6A91004A426E /* GameCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903C3147E6A91004A426E /* GameCharacter.m */; };
 		1D6903C7147EB41A004A426E /* Box2DGameCharacter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903C6147EB41A004A426E /* Box2DGameCharacter.mm */; };
 		1D6903CC147EB88A004A426E /* Frog.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903CB147EB88A004A426E /* Frog.mm */; };
-		1D6903CF147EBAEC004A426E /* BaseFly.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903CE147EBAEC004A426E /* BaseFly.m */; };
-		1D6903D5147EBB5E004A426E /* FoodFly.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903D4147EBB5D004A426E /* FoodFly.m */; };
-		1D6903D8147EBB6E004A426E /* Bee.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903D7147EBB6E004A426E /* Bee.m */; };
+		1D6903CF147EBAEC004A426E /* BaseFly.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903CE147EBAEC004A426E /* BaseFly.mm */; };
+		1D6903D5147EBB5E004A426E /* FoodFly.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903D4147EBB5D004A426E /* FoodFly.mm */; };
+		1D6903D8147EBB6E004A426E /* Bee.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903D7147EBB6E004A426E /* Bee.mm */; };
 		1D6903E3147EBF0B004A426E /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6903DD147EBF0B004A426E /* Icon-Small-50.png */; };
 		1D6903E4147EBF0B004A426E /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6903DE147EBF0B004A426E /* Icon@2x.png */; };
 		1D6903E5147EBF0B004A426E /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6903DF147EBF0B004A426E /* Icon-72.png */; };
 		1D6903E6147EBF0B004A426E /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6903E0147EBF0B004A426E /* Icon-Small.png */; };
 		1D6903E7147EBF0B004A426E /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6903E1147EBF0B004A426E /* Icon-Small@2x.png */; };
 		1D6903E8147EBF0B004A426E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6903E2147EBF0B004A426E /* Icon.png */; };
+		1D6903EE147EEE82004A426E /* Scene1UILayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903ED147EEE82004A426E /* Scene1UILayer.m */; };
+		1D6903F1147EEE97004A426E /* Scene1ActionLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903F0147EEE97004A426E /* Scene1ActionLayer.mm */; };
+		1D6903F4147EEEAD004A426E /* Scene1.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903F3147EEEAD004A426E /* Scene1.mm */; };
 		1DFA051E1479254A00549AE4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFA051D1479254A00549AE4 /* QuartzCore.framework */; };
 		1DFA05201479254A00549AE4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFA051F1479254A00549AE4 /* OpenGLES.framework */; };
 		1DFA05221479254A00549AE4 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFA05211479254A00549AE4 /* OpenAL.framework */; };
@@ -207,17 +210,24 @@
 		1D6903CA147EB88A004A426E /* Frog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Frog.h; sourceTree = "<group>"; };
 		1D6903CB147EB88A004A426E /* Frog.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Frog.mm; sourceTree = "<group>"; };
 		1D6903CD147EBAEC004A426E /* BaseFly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFly.h; sourceTree = "<group>"; };
-		1D6903CE147EBAEC004A426E /* BaseFly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseFly.m; sourceTree = "<group>"; };
+		1D6903CE147EBAEC004A426E /* BaseFly.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BaseFly.mm; sourceTree = "<group>"; };
 		1D6903D3147EBB5D004A426E /* FoodFly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodFly.h; sourceTree = "<group>"; };
-		1D6903D4147EBB5D004A426E /* FoodFly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodFly.m; sourceTree = "<group>"; };
+		1D6903D4147EBB5D004A426E /* FoodFly.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FoodFly.mm; sourceTree = "<group>"; };
 		1D6903D6147EBB6E004A426E /* Bee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bee.h; sourceTree = "<group>"; };
-		1D6903D7147EBB6E004A426E /* Bee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bee.m; sourceTree = "<group>"; };
+		1D6903D7147EBB6E004A426E /* Bee.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Bee.mm; sourceTree = "<group>"; };
 		1D6903DD147EBF0B004A426E /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "FeedTheFrog/Images/Icons/Icon-Small-50.png"; sourceTree = "<group>"; };
 		1D6903DE147EBF0B004A426E /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "FeedTheFrog/Images/Icons/Icon@2x.png"; sourceTree = "<group>"; };
 		1D6903DF147EBF0B004A426E /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "FeedTheFrog/Images/Icons/Icon-72.png"; sourceTree = "<group>"; };
 		1D6903E0147EBF0B004A426E /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "FeedTheFrog/Images/Icons/Icon-Small.png"; sourceTree = "<group>"; };
 		1D6903E1147EBF0B004A426E /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "FeedTheFrog/Images/Icons/Icon-Small@2x.png"; sourceTree = "<group>"; };
 		1D6903E2147EBF0B004A426E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = FeedTheFrog/Images/Icons/Icon.png; sourceTree = "<group>"; };
+		1D6903EC147EEE82004A426E /* Scene1UILayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene1UILayer.h; sourceTree = "<group>"; };
+		1D6903ED147EEE82004A426E /* Scene1UILayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene1UILayer.m; sourceTree = "<group>"; };
+		1D6903EF147EEE97004A426E /* Scene1ActionLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene1ActionLayer.h; sourceTree = "<group>"; };
+		1D6903F0147EEE97004A426E /* Scene1ActionLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Scene1ActionLayer.mm; sourceTree = "<group>"; };
+		1D6903F2147EEEAC004A426E /* Scene1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene1.h; sourceTree = "<group>"; };
+		1D6903F3147EEEAD004A426E /* Scene1.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Scene1.mm; sourceTree = "<group>"; };
+		1D6903F5148004CB004A426E /* SimpleQueryCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleQueryCallback.h; sourceTree = "<group>"; };
 		1DFA05191479254A00549AE4 /* FeedTheFrog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedTheFrog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DFA051D1479254A00549AE4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1DFA051F1479254A00549AE4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -574,6 +584,7 @@
 		1D69039F147BA0D9004A426E /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				1D6903EA147EEE10004A426E /* Scene1 */,
 			);
 			name = Game;
 			sourceTree = "<group>";
@@ -612,11 +623,11 @@
 			isa = PBXGroup;
 			children = (
 				1D6903CD147EBAEC004A426E /* BaseFly.h */,
-				1D6903CE147EBAEC004A426E /* BaseFly.m */,
+				1D6903CE147EBAEC004A426E /* BaseFly.mm */,
 				1D6903D3147EBB5D004A426E /* FoodFly.h */,
-				1D6903D4147EBB5D004A426E /* FoodFly.m */,
+				1D6903D4147EBB5D004A426E /* FoodFly.mm */,
 				1D6903D6147EBB6E004A426E /* Bee.h */,
-				1D6903D7147EBB6E004A426E /* Bee.m */,
+				1D6903D7147EBB6E004A426E /* Bee.mm */,
 			);
 			name = Flies;
 			sourceTree = "<group>";
@@ -624,6 +635,7 @@
 		1D6903C9147EB730004A426E /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				1D6903E9147ECDD0004A426E /* Scene1 */,
 			);
 			name = Game;
 			sourceTree = "<group>";
@@ -639,6 +651,34 @@
 				1D6903E2147EBF0B004A426E /* Icon.png */,
 			);
 			name = Icons;
+			sourceTree = "<group>";
+		};
+		1D6903E9147ECDD0004A426E /* Scene1 */ = {
+			isa = PBXGroup;
+			children = (
+				1D6903EB147EEE2C004A426E /* Background */,
+			);
+			name = Scene1;
+			sourceTree = "<group>";
+		};
+		1D6903EA147EEE10004A426E /* Scene1 */ = {
+			isa = PBXGroup;
+			children = (
+				1D6903EC147EEE82004A426E /* Scene1UILayer.h */,
+				1D6903ED147EEE82004A426E /* Scene1UILayer.m */,
+				1D6903EF147EEE97004A426E /* Scene1ActionLayer.h */,
+				1D6903F0147EEE97004A426E /* Scene1ActionLayer.mm */,
+				1D6903F2147EEEAC004A426E /* Scene1.h */,
+				1D6903F3147EEEAD004A426E /* Scene1.mm */,
+			);
+			name = Scene1;
+			sourceTree = "<group>";
+		};
+		1D6903EB147EEE2C004A426E /* Background */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Background;
 			sourceTree = "<group>";
 		};
 		1DFA050E1479254A00549AE4 = {
@@ -1199,6 +1239,7 @@
 			children = (
 				1DFA06FB1479254D00549AE4 /* GLES-Render.h */,
 				1DFA06FC1479254D00549AE4 /* GLES-Render.mm */,
+				1D6903F5148004CB004A426E /* SimpleQueryCallback.h */,
 			);
 			name = Box2D;
 			sourceTree = "<group>";
@@ -1458,9 +1499,12 @@
 				1D6903C4147E6A91004A426E /* GameCharacter.m in Sources */,
 				1D6903C7147EB41A004A426E /* Box2DGameCharacter.mm in Sources */,
 				1D6903CC147EB88A004A426E /* Frog.mm in Sources */,
-				1D6903CF147EBAEC004A426E /* BaseFly.m in Sources */,
-				1D6903D5147EBB5E004A426E /* FoodFly.m in Sources */,
-				1D6903D8147EBB6E004A426E /* Bee.m in Sources */,
+				1D6903CF147EBAEC004A426E /* BaseFly.mm in Sources */,
+				1D6903D5147EBB5E004A426E /* FoodFly.mm in Sources */,
+				1D6903D8147EBB6E004A426E /* Bee.mm in Sources */,
+				1D6903EE147EEE82004A426E /* Scene1UILayer.m in Sources */,
+				1D6903F1147EEE97004A426E /* Scene1ActionLayer.mm in Sources */,
+				1D6903F4147EEEAD004A426E /* Scene1.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

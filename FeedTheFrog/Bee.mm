@@ -1,16 +1,15 @@
 //
-//  BaseFly.m
+//  Bee.m
 //  FeedTheFrog
 //
 
-#import "BaseFly.h"
+#import "Bee.h"
 
-@implementation BaseFly
+@implementation Bee
 
 - (id)init
 {
-    self = [super init];
-    if (self) {
+    if ((self = [super init])) {
         // Initialization code here.
     }
     

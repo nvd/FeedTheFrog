@@ -5,6 +5,7 @@
 
 #import "BaseFly.h"
 
-@interface Bee : BaseFly
+@interface Bee : BaseFly {
+}
 
 @end

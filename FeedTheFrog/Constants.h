@@ -9,7 +9,7 @@ typedef enum {
     kNoSceneInitialized=0,
     kMainMenuScene=1,
     kOptionsScene=2,
-    kOriginalGameScene=100
+    kGameScene1=100
 } SceneTypes;
 
 #define GAME_LEVEL_INDEX 100
@@ -36,3 +36,5 @@ typedef enum {
 
 #define STOPSOUNDEFFECT(...) \
 [[AudioManager sharedAudioManager] stopSoundEffect:__VA_ARGS__]
+
+#define PTM_RATIO ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? 100.0 : 50.0)

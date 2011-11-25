@@ -7,6 +7,7 @@
 #import "AudioManager.h"
 #import "MainMenuScene.h"
 #import "OptionsScene.h"
+#import "Scene1.h"
 
 @implementation GameManager
 static GameManager* _sharedGameManager = nil;                      
@@ -33,8 +34,8 @@ static GameManager* _sharedGameManager = nil;
         case kOptionsScene:
             result = @"kOptionsScene";
             break;
-        case kOriginalGameScene:
-            result = @"kOriginalGameScene";
+        case kGameScene1:
+            result = @"kGameScene1";
             break;
         default:
             [NSException raise:NSGenericException format:@"Unexpected SceneType."];
@@ -159,8 +160,8 @@ static GameManager* _sharedGameManager = nil;
         case kOptionsScene:
             sceneToRun = [OptionsScene node];
             break;
-        case kOriginalGameScene:
-            //sceneToRun = [CreditsScene node];
+        case kGameScene1:
+            sceneToRun = [Scene1 node];
             break;
             
         default:
