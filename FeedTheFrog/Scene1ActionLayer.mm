@@ -6,6 +6,7 @@
 #import "Scene1ActionLayer.h"
 #import "Box2DGameCharacter.h"
 #import "SimpleQueryCallback.h"
+#import "GameManager.h"
 
 @implementation Scene1ActionLayer
 
@@ -21,17 +22,11 @@
     groundBodyDef.position.Set(0, 0);
     groundBody = world->CreateBody(&groundBodyDef);*/
     
-    
     CGSize winSize = [[CCDirector sharedDirector] winSize];
     float32 margin = 10.0f;
     b2Vec2 lowerLeft = b2Vec2(margin/PTM_RATIO, margin/PTM_RATIO);
     b2Vec2 lowerRight = b2Vec2((winSize.width-margin)/PTM_RATIO,
                                margin/PTM_RATIO);
-
-    b2Vec2 upperRight = b2Vec2((winSize.width-margin)/PTM_RATIO,
-                               (winSize.height-margin)/PTM_RATIO);
-    b2Vec2 upperLeft = b2Vec2(margin/PTM_RATIO,
-                              (winSize.height-margin)/PTM_RATIO);
 
     b2BodyDef groundBodyDef;
     groundBodyDef.type = b2_staticBody;
@@ -45,12 +40,31 @@
 
     groundShape.SetAsEdge(lowerLeft, lowerRight);
     groundBody->CreateFixture(&groundFixtureDef);
-    groundShape.SetAsEdge(lowerRight, upperRight);
-    groundBody->CreateFixture(&groundFixtureDef);
-    groundShape.SetAsEdge(upperRight, upperLeft);
-    groundBody->CreateFixture(&groundFixtureDef);
-    groundShape.SetAsEdge(upperLeft, lowerLeft);
-    groundBody->CreateFixture(&groundFixtureDef);
+}
+
+// Remains more or less the same
+-(void)createBackground {
+    CCParallaxNode * parallex = [CCParallaxNode node];
+    [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGB565];
+    
+    CCSprite * background;
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        background = [CCSprite spriteWithFile:@"bg1-ipad.png"];
+    }
+    else {
+        background = [CCSprite spriteWithFile:@"bg1.png"];
+    }
+    
+    background.anchorPoint = ccp(0, 0);
+    [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_Default];
+    
+    [parallex addChild:background z:-10 parallaxRatio:ccp(0.05f, 0.05f) 
+        positionOffset:ccp(0, 0)];
+    [self addChild:parallex z:-10];
+}
+
+-(void)createLevel {
+    [self createBackground];
 }
 
 - (void)createBoxAtLocation:(CGPoint)location withSize:(CGSize)size {
@@ -119,6 +133,8 @@
                                     batchNodeWithFile:@"scene1atlas.png"];
             [self addChild:sceneSpriteBatchNode z:-1];
         }*/
+        
+        [self createLevel];
     }
     
     return self;
@@ -159,6 +175,11 @@
     }
 }
 
+-(void)gameOver:(id)sender {
+    [[GameManager sharedGameManager] runSceneWithID:kMainMenuScene];
+}
+
+//Remains more or less the same
 -(void)registerWithTouchDispatcher {
     [[CCTouchDispatcher sharedDispatcher]
      addTargetedDelegate:self priority:0 swallowsTouches:YES];
