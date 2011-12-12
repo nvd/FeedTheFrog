@@ -4,9 +4,10 @@
 //
 
 #import "Scene1ActionLayer.h"
-#import "Box2DGameCharacter.h"
+#import "Box2DSprite.h"
 #import "SimpleQueryCallback.h"
 #import "GameManager.h"
+#import "Frog.h"
 
 @implementation Scene1ActionLayer
 
@@ -14,6 +15,15 @@
     b2Vec2 gravity = b2Vec2(0.0f,-10.0f);
     bool doSleep = true;
     world = new b2World(gravity, doSleep);
+}
+
+-(void)createFrogAtLocation:(CGPoint)location {
+    frog = [[[Frog alloc] initWithWorld:world atLocation:location] autorelease];
+    CCLOGINFO(@"%d",frog.texture.name);
+    [sceneSpriteBatchNode addChild:frog z:1 tag:kFrogSpriteTagValue];
+    //[sceneSpriteBatchNode addChild:frog.torso];
+    [sceneSpriteBatchNode addChild:frog.footL];
+    [sceneSpriteBatchNode addChild:frog.footR];
 }
 
 -(void)createGround {
@@ -119,21 +129,22 @@
         self.isTouchEnabled = YES;
         
         //Create level background
-        /*if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        //if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
             [[CCSpriteFrameCache sharedSpriteFrameCache]
-             addSpriteFramesWithFile:@"scene1atlas-hd.plist"];
+             addSpriteFramesWithFile:@"gameAtlas-hd.plist"];
             sceneSpriteBatchNode = [CCSpriteBatchNode 
-                                    batchNodeWithFile:@"scene1atlas-hd.png"];
+                                    batchNodeWithFile:@"gameAtlas-hd.png"];
             [self addChild:sceneSpriteBatchNode z:-1];
-        }
+        /*}
         else {
             [[CCSpriteFrameCache sharedSpriteFrameCache]
-             addSpriteFramesWithFile:@"scene1atlas.plist"];
+             addSpriteFramesWithFile:@"gameAtlas.plist"];
             sceneSpriteBatchNode = [CCSpriteBatchNode
-                                    batchNodeWithFile:@"scene1atlas.png"];
+                                    batchNodeWithFile:@"gameAtlas.png"];
             [self addChild:sceneSpriteBatchNode z:-1];
         }*/
         
+        [self createFrogAtLocation:ccp(winSize.width/2, winSize.width*0.3)];
         [self createLevel];
     }
     
@@ -161,7 +172,7 @@
     
     for (b2Body *b=world->GetBodyList(); b!=NULL; b=b->GetNext()) {
         if (b->GetUserData() != NULL) {
-            Box2DGameCharacter *character = (Box2DGameCharacter*) b->GetUserData();
+            Box2DSprite *character = (Box2DSprite*) b->GetUserData();
             character.position = ccp(b->GetPosition().x * PTM_RATIO,
                                      b->GetPosition().y * PTM_RATIO);
             character.rotation = CC_RADIANS_TO_DEGREES(b->GetAngle() * -1);
@@ -201,6 +212,11 @@
     
     if (callback.fixtureFound) {
         b2Body *body = callback.fixtureFound->GetBody();
+        
+        Box2DSprite *sprite = (Box2DSprite *) body->GetUserData();
+        if (sprite == NULL) return FALSE;
+        if(![sprite mouseJointBegan]) return FALSE;
+        
         b2MouseJointDef mouseJointDef;
         mouseJointDef.bodyA = groundBody;
         mouseJointDef.bodyB = body;

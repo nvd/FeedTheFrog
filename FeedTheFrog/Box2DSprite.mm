@@ -1,11 +1,11 @@
 //
-//  Box2DGameCharacter.m
+//  Box2DSprite.m
 //  FeedTheFrog
 //
 
-#import "Box2DGameCharacter.h"
+#import "Box2DSprite.h"
 
-@implementation Box2DGameCharacter
+@implementation Box2DSprite
 @synthesize body;
 
 // Override if necessary

@@ -1,12 +1,12 @@
 //
-//  Box2DGameCharacter.h
+//  Box2DSprite.h
 //  FeedTheFrog
 //
 
 #import "GameCharacter.h"
 #import "Box2D.h"
 
-@interface Box2DGameCharacter : GameCharacter {
+@interface Box2DSprite : GameCharacter {
     b2Body *body;
 }
 @property (assign) b2Body *body;

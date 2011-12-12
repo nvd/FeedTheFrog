@@ -3,9 +3,9 @@
 //  FeedTheFrog
 //
 
-#import "Box2DGameCharacter.h"
+#import "Box2DSprite.h"
 
-@interface BaseFly : Box2DGameCharacter {
+@interface BaseFly : Box2DSprite {
 }
 
 @end

@@ -3,6 +3,8 @@
 //  FeedTheFrog
 //
 
+#define kFrogSpriteTagValue 0
+
 #define kMainMenuTagValue 10
 
 typedef enum {
@@ -38,3 +40,5 @@ typedef enum {
 [[AudioManager sharedAudioManager] stopSoundEffect:__VA_ARGS__]
 
 #define PTM_RATIO ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? 100.0 : 50.0)
+#define HD_PTM_RATIO 100.0
+

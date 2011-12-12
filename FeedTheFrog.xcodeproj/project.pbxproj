@@ -20,7 +20,7 @@
 		1D6903C0147C6B75004A426E /* FeedTheFrogFont.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6903BE147C6B75004A426E /* FeedTheFrogFont.png */; };
 		1D6903C1147C6B75004A426E /* FeedTheFrogFont.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 1D6903BF147C6B75004A426E /* FeedTheFrogFont.fnt */; };
 		1D6903C4147E6A91004A426E /* GameCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903C3147E6A91004A426E /* GameCharacter.m */; };
-		1D6903C7147EB41A004A426E /* Box2DGameCharacter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903C6147EB41A004A426E /* Box2DGameCharacter.mm */; };
+		1D6903C7147EB41A004A426E /* Box2DSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903C6147EB41A004A426E /* Box2DSprite.mm */; };
 		1D6903CC147EB88A004A426E /* Frog.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903CB147EB88A004A426E /* Frog.mm */; };
 		1D6903CF147EBAEC004A426E /* BaseFly.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903CE147EBAEC004A426E /* BaseFly.mm */; };
 		1D6903D5147EBB5E004A426E /* FoodFly.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D6903D4147EBB5D004A426E /* FoodFly.mm */; };
@@ -37,6 +37,8 @@
 		1D6903F91481AAAE004A426E /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6903F61481AAAE004A426E /* bg1.png */; };
 		1D6903FA1481AAAE004A426E /* bg1-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6903F71481AAAE004A426E /* bg1-hd.png */; };
 		1D6903FB1481AAAE004A426E /* bg1-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6903F81481AAAE004A426E /* bg1-ipad.png */; };
+		1D94E2B61494E9DB003919B1 /* gameAtlas-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D94E2B41494E9DB003919B1 /* gameAtlas-hd.plist */; };
+		1D94E2B71494E9DB003919B1 /* gameAtlas-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D94E2B51494E9DB003919B1 /* gameAtlas-hd.png */; };
 		1DFA051E1479254A00549AE4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFA051D1479254A00549AE4 /* QuartzCore.framework */; };
 		1DFA05201479254A00549AE4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFA051F1479254A00549AE4 /* OpenGLES.framework */; };
 		1DFA05221479254A00549AE4 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFA05211479254A00549AE4 /* OpenAL.framework */; };
@@ -208,8 +210,8 @@
 		1D6903BF147C6B75004A426E /* FeedTheFrogFont.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = FeedTheFrogFont.fnt; path = FeedTheFrog/Images/Fonts/FeedTheFrogFont.fnt; sourceTree = "<group>"; };
 		1D6903C2147E6A91004A426E /* GameCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCharacter.h; sourceTree = "<group>"; };
 		1D6903C3147E6A91004A426E /* GameCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCharacter.m; sourceTree = "<group>"; };
-		1D6903C5147EB41A004A426E /* Box2DGameCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box2DGameCharacter.h; sourceTree = "<group>"; };
-		1D6903C6147EB41A004A426E /* Box2DGameCharacter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Box2DGameCharacter.mm; sourceTree = "<group>"; };
+		1D6903C5147EB41A004A426E /* Box2DSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box2DSprite.h; sourceTree = "<group>"; };
+		1D6903C6147EB41A004A426E /* Box2DSprite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Box2DSprite.mm; sourceTree = "<group>"; };
 		1D6903CA147EB88A004A426E /* Frog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Frog.h; sourceTree = "<group>"; };
 		1D6903CB147EB88A004A426E /* Frog.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Frog.mm; sourceTree = "<group>"; };
 		1D6903CD147EBAEC004A426E /* BaseFly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFly.h; sourceTree = "<group>"; };
@@ -234,6 +236,8 @@
 		1D6903F61481AAAE004A426E /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg1.png; path = FeedTheFrog/Images/Scenes/Game/Scene1/Background/bg1.png; sourceTree = "<group>"; };
 		1D6903F71481AAAE004A426E /* bg1-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg1-hd.png"; path = "FeedTheFrog/Images/Scenes/Game/Scene1/Background/bg1-hd.png"; sourceTree = "<group>"; };
 		1D6903F81481AAAE004A426E /* bg1-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg1-ipad.png"; path = "FeedTheFrog/Images/Scenes/Game/Scene1/Background/bg1-ipad.png"; sourceTree = "<group>"; };
+		1D94E2B41494E9DB003919B1 /* gameAtlas-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "gameAtlas-hd.plist"; path = "FeedTheFrog/Images/gameAtlas-hd.plist"; sourceTree = "<group>"; };
+		1D94E2B51494E9DB003919B1 /* gameAtlas-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gameAtlas-hd.png"; path = "FeedTheFrog/Images/gameAtlas-hd.png"; sourceTree = "<group>"; };
 		1DFA05191479254A00549AE4 /* FeedTheFrog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedTheFrog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DFA051D1479254A00549AE4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1DFA051F1479254A00549AE4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -726,7 +730,7 @@
 			isa = PBXGroup;
 			children = (
 				1DFA07071479280900549AE4 /* Images */,
-				1DFA07081479280D00549AE4 /* Plists */,
+				1DFA07081479280D00549AE4 /* AnimationPlists */,
 				1DFA07061479280500549AE4 /* Sounds */,
 				1DFA07091479283800549AE4 /* Src */,
 				1DFA06F51479254D00549AE4 /* RootViewController.h */,
@@ -1202,6 +1206,8 @@
 		1DFA07071479280900549AE4 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1D94E2B41494E9DB003919B1 /* gameAtlas-hd.plist */,
+				1D94E2B51494E9DB003919B1 /* gameAtlas-hd.png */,
 				1D6903DC147EBD64004A426E /* Icons */,
 				1D6903BD147C2A74004A426E /* Fonts */,
 				1D6903AA147BBAD3004A426E /* Scenes */,
@@ -1210,11 +1216,11 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		1DFA07081479280D00549AE4 /* Plists */ = {
+		1DFA07081479280D00549AE4 /* AnimationPlists */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Plists;
+			name = AnimationPlists;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -1282,8 +1288,8 @@
 				1DFA071D14794B5600549AE4 /* GameObject.m */,
 				1D6903C2147E6A91004A426E /* GameCharacter.h */,
 				1D6903C3147E6A91004A426E /* GameCharacter.m */,
-				1D6903C5147EB41A004A426E /* Box2DGameCharacter.h */,
-				1D6903C6147EB41A004A426E /* Box2DGameCharacter.mm */,
+				1D6903C5147EB41A004A426E /* Box2DSprite.h */,
+				1D6903C6147EB41A004A426E /* Box2DSprite.mm */,
 				1D6903CA147EB88A004A426E /* Frog.h */,
 				1D6903CB147EB88A004A426E /* Frog.mm */,
 			);
@@ -1357,6 +1363,8 @@
 				1D6903F91481AAAE004A426E /* bg1.png in Resources */,
 				1D6903FA1481AAAE004A426E /* bg1-hd.png in Resources */,
 				1D6903FB1481AAAE004A426E /* bg1-ipad.png in Resources */,
+				1D94E2B61494E9DB003919B1 /* gameAtlas-hd.plist in Resources */,
+				1D94E2B71494E9DB003919B1 /* gameAtlas-hd.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1509,7 +1517,7 @@
 				1D6903AF147C0892004A426E /* OptionsLayer.m in Sources */,
 				1D6903B2147C08AA004A426E /* OptionsScene.m in Sources */,
 				1D6903C4147E6A91004A426E /* GameCharacter.m in Sources */,
-				1D6903C7147EB41A004A426E /* Box2DGameCharacter.mm in Sources */,
+				1D6903C7147EB41A004A426E /* Box2DSprite.mm in Sources */,
 				1D6903CC147EB88A004A426E /* Frog.mm in Sources */,
 				1D6903CF147EBAEC004A426E /* BaseFly.mm in Sources */,
 				1D6903D5147EBB5E004A426E /* FoodFly.mm in Sources */,
@@ -1532,7 +1540,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					DEBUG,
-					"COCOS2D_DEBUG=1",
+					"COCOS2D_DEBUG=2",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
