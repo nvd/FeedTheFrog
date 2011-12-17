@@ -8,6 +8,12 @@
 #import "SimpleQueryCallback.h"
 #import "GameManager.h"
 #import "Frog.h"
+#import "Cloud.h"
+
+@interface Scene1ActionLayer (PrivateMethods)
+-(void)resetCloudWithNode:(id)node;
+-(void)createCloud;
+@end
 
 @implementation Scene1ActionLayer
 
@@ -146,9 +152,20 @@
         
         [self createFrogAtLocation:ccp(winSize.width/2, winSize.width*0.3)];
         [self createLevel];
+        
+        //Create Clouds
+        for (int x=0; x < 10; x++) {
+            [self createCloud];
+        }
     }
     
     return self;
+}
+
+#pragma mark -
+#pragma Cloud code
+- (void)createCloud {
+    [sceneSpriteBatchNode addChild:[[[Cloud alloc] init] autorelease]];
 }
 
 #pragma mark -
@@ -179,6 +196,7 @@
         }
     }
     
+    //TODO: UNCOMMENT THIS - Clouds causing errors
     CCArray *listOfGameCharacters = [sceneSpriteBatchNode children];
     for (GameCharacter *tempChar in listOfGameCharacters) {
         [tempChar updateStateWithDeltaTime:dt 

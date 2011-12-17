@@ -32,10 +32,10 @@
     b2PolygonShape shape;
     /*int num = 4;
     b2Vec2 verts[] = {
-        b2Vec2(11.0f / PTM_RATIO, 73.0f / PTM_RATIO),
-        b2Vec2(-46.0f / PTM_RATIO, 73.0f / PTM_RATIO),
-        b2Vec2(-66.0f / PTM_RATIO, -76.0f / PTM_RATIO),
-        b2Vec2(69.0f / PTM_RATIO, -74.0f / PTM_RATIO)
+        b2Vec2(11.0f / HD_PTM_RATIO, 73.0f / HD_PTM_RATIO),
+        b2Vec2(-46.0f / HD_PTM_RATIO, 73.0f / HD_PTM_RATIO),
+        b2Vec2(-66.0f / HD_PTM_RATIO, -76.0f / HD_PTM_RATIO),
+        b2Vec2(69.0f / HD_PTM_RATIO, -74.0f / HD_PTM_RATIO)
     };*/
     
     /*int num = 6;
@@ -124,7 +124,7 @@
     footL = [Box2DSprite spriteWithSpriteFrameName:@"Foot.png"];
     footL.gameObjectType = kFrog;
     footLBody = [self createPartAtLocation:
-                 body->GetWorldPoint(b2Vec2(-78.0/HD_PTM_RATIO, -90.0/HD_PTM_RATIO))
+                 body->GetWorldPoint(b2Vec2(-78.0/PTM_RATIO, -90.0/PTM_RATIO))
                                 withSprite:footL
                                withDensity:10.0];
     
@@ -132,7 +132,7 @@
     footR.flipX = true;
     footR.gameObjectType = kFrog;
     footRBody = [self createPartAtLocation:
-                 body->GetWorldPoint(b2Vec2(78.0/HD_PTM_RATIO, -90.0/HD_PTM_RATIO))
+                 body->GetWorldPoint(b2Vec2(78.0/PTM_RATIO, -90.0/PTM_RATIO))
                                 withSprite:footR
                                withDensity:10.0];
 }
@@ -153,7 +153,7 @@
                             footLBody->GetWorldCenter(), axis);
     prisJointDef.enableLimit = true;
     prisJointDef.lowerTranslation = 0.0;
-    prisJointDef.upperTranslation = 43.0/HD_PTM_RATIO;
+    prisJointDef.upperTranslation = 43.0/PTM_RATIO;
     world->CreateJoint(&prisJointDef);
     
     // Body - Right Foot Joint
@@ -161,7 +161,7 @@
                             footRBody->GetWorldCenter(), axis);
     prisJointDef.enableLimit = true;
     prisJointDef.lowerTranslation = 0.0;
-    prisJointDef.upperTranslation = 43.0/HD_PTM_RATIO;
+    prisJointDef.upperTranslation = 43.0/PTM_RATIO;
     world->CreateJoint(&prisJointDef);
     
     //Body - Left Foot Soft Distance Joint
@@ -170,7 +170,7 @@
     distanceJointDef.collideConnected = true;
     distanceJointDef.dampingRatio = 0.5;
     distanceJointDef.frequencyHz = 1.5;
-    distanceJointDef.length = 125.0/HD_PTM_RATIO;
+    distanceJointDef.length = 125.0/PTM_RATIO;
     world->CreateJoint(&distanceJointDef);
     
     //Body - Left Foot Soft Distance Joint
@@ -178,7 +178,7 @@
     distanceJointDef.collideConnected = true;
     distanceJointDef.dampingRatio = 0.5;
     distanceJointDef.frequencyHz = 1.5;
-    distanceJointDef.length = 125.0/HD_PTM_RATIO;
+    distanceJointDef.length = 125.0/PTM_RATIO;
     world->CreateJoint(&distanceJointDef);
 }
 

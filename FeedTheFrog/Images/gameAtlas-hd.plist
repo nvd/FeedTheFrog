@@ -4,10 +4,75 @@
     <dict>
         <key>frames</key>
         <dict>
+            <key>Cloud_0.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{131,74}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{131,74}}</string>
+                <key>sourceSize</key>
+                <string>{131,74}</string>
+            </dict>
+            <key>Cloud_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{135,2},{131,74}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{131,74}}</string>
+                <key>sourceSize</key>
+                <string>{131,74}</string>
+            </dict>
+            <key>Cloud_2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{268,2},{219,99}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{219,99}}</string>
+                <key>sourceSize</key>
+                <string>{219,99}</string>
+            </dict>
+            <key>Cloud_3.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,103},{196,85}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{196,85}}</string>
+                <key>sourceSize</key>
+                <string>{196,85}</string>
+            </dict>
+            <key>Cloud_4.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{200,103},{233,83}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{233,83}}</string>
+                <key>sourceSize</key>
+                <string>{233,83}</string>
+            </dict>
             <key>Foot.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{67,30}}</string>
+                <string>{{435,103},{67,30}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -20,7 +85,7 @@
             <key>Torso.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{71,2},{144,158}}</string>
+                <string>{{2,190},{144,158}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -38,9 +103,9 @@
             <key>realTextureFileName</key>
             <string>gameAtlas-hd.png</string>
             <key>size</key>
-            <string>{256,256}</string>
+            <string>{512,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:1e8f652174bd8a8f45b8a0cee758381a$</string>
+            <string>$TexturePacker:SmartUpdate:d7fbd034d9685d6d645044051555b6ee$</string>
             <key>textureFileName</key>
             <string>gameAtlas-hd.png</string>
         </dict>

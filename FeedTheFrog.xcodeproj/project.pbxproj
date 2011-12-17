@@ -37,6 +37,7 @@
 		1D6903F91481AAAE004A426E /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6903F61481AAAE004A426E /* bg1.png */; };
 		1D6903FA1481AAAE004A426E /* bg1-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6903F71481AAAE004A426E /* bg1-hd.png */; };
 		1D6903FB1481AAAE004A426E /* bg1-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6903F81481AAAE004A426E /* bg1-ipad.png */; };
+		1D9194D51497F5B300FE5152 /* Cloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9194D41497F5B300FE5152 /* Cloud.m */; };
 		1D94E2B61494E9DB003919B1 /* gameAtlas-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D94E2B41494E9DB003919B1 /* gameAtlas-hd.plist */; };
 		1D94E2B71494E9DB003919B1 /* gameAtlas-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D94E2B51494E9DB003919B1 /* gameAtlas-hd.png */; };
 		1DFA051E1479254A00549AE4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFA051D1479254A00549AE4 /* QuartzCore.framework */; };
@@ -236,6 +237,8 @@
 		1D6903F61481AAAE004A426E /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg1.png; path = FeedTheFrog/Images/Scenes/Game/Scene1/Background/bg1.png; sourceTree = "<group>"; };
 		1D6903F71481AAAE004A426E /* bg1-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg1-hd.png"; path = "FeedTheFrog/Images/Scenes/Game/Scene1/Background/bg1-hd.png"; sourceTree = "<group>"; };
 		1D6903F81481AAAE004A426E /* bg1-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg1-ipad.png"; path = "FeedTheFrog/Images/Scenes/Game/Scene1/Background/bg1-ipad.png"; sourceTree = "<group>"; };
+		1D9194D31497F5B300FE5152 /* Cloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cloud.h; sourceTree = "<group>"; };
+		1D9194D41497F5B300FE5152 /* Cloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cloud.m; sourceTree = "<group>"; };
 		1D94E2B41494E9DB003919B1 /* gameAtlas-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "gameAtlas-hd.plist"; path = "FeedTheFrog/Images/gameAtlas-hd.plist"; sourceTree = "<group>"; };
 		1D94E2B51494E9DB003919B1 /* gameAtlas-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gameAtlas-hd.png"; path = "FeedTheFrog/Images/gameAtlas-hd.png"; sourceTree = "<group>"; };
 		1DFA05191479254A00549AE4 /* FeedTheFrog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedTheFrog.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -692,6 +695,15 @@
 				1D6903F81481AAAE004A426E /* bg1-ipad.png */,
 			);
 			name = Background;
+			sourceTree = "<group>";
+		};
+		1D9194D21497F59300FE5152 /* Props */ = {
+			isa = PBXGroup;
+			children = (
+				1D9194D31497F5B300FE5152 /* Cloud.h */,
+				1D9194D41497F5B300FE5152 /* Cloud.m */,
+			);
+			name = Props;
 			sourceTree = "<group>";
 		};
 		1DFA050E1479254A00549AE4 = {
@@ -1283,6 +1295,7 @@
 		1DFA0711147948BD00549AE4 /* GameObjects */ = {
 			isa = PBXGroup;
 			children = (
+				1D9194D21497F59300FE5152 /* Props */,
 				1D6903C8147EB606004A426E /* Flies */,
 				1DFA071C14794B5600549AE4 /* GameObject.h */,
 				1DFA071D14794B5600549AE4 /* GameObject.m */,
@@ -1525,6 +1538,7 @@
 				1D6903EE147EEE82004A426E /* Scene1UILayer.m in Sources */,
 				1D6903F1147EEE97004A426E /* Scene1ActionLayer.mm in Sources */,
 				1D6903F4147EEEAD004A426E /* Scene1.mm in Sources */,
+				1D9194D51497F5B300FE5152 /* Cloud.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

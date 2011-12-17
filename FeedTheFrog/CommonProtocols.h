@@ -14,4 +14,5 @@ typedef enum{
     KFoodFly,
     kBee,
     kBulletTimeBonusFly,
+    kCloud
 } GameObjectType;

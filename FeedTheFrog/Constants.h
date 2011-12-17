@@ -42,3 +42,10 @@ typedef enum {
 #define PTM_RATIO ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? 100.0 : 50.0)
 #define HD_PTM_RATIO 100.0
 
+// Clouds
+#define NUM_CLOUDS 5
+#define kMaxCloudMoveDuration 15
+#define kMinCloudMoveDuration 10
+
+
+
