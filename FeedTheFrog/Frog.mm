@@ -91,8 +91,8 @@
     return FALSE;
 }*/
 
-#pragma Frog model create methods
 #pragma mark -
+#pragma mark Frog model create methods
 - (b2Body *)createPartAtLocation:(b2Vec2)location 
                       withSprite:(Box2DSprite *)sprite
                     withDensity:(float)density{

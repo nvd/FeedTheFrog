@@ -26,9 +26,8 @@
     id sequenceAction = [CCSequence actions:moveAction, resetAction, nil];
     [self runAction:sequenceAction];
     
-    int newZOrder = kMaxCloudMoveDuration - moveDuration;
-    [parent_ reorderChild:self z:newZOrder];
-
+    //int newZOrder = kMaxCloudMoveDuration - moveDuration;
+    //[parent_ reorderChild:self z:newZOrder];
 }
 
 - (void)resetCloud {

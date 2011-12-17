@@ -2,7 +2,7 @@
 //  Constants.h
 //  FeedTheFrog
 //
-
+#define kFrogZ 1
 #define kFrogSpriteTagValue 0
 
 #define kMainMenuTagValue 10

@@ -26,10 +26,9 @@
 -(void)createFrogAtLocation:(CGPoint)location {
     frog = [[[Frog alloc] initWithWorld:world atLocation:location] autorelease];
     CCLOGINFO(@"%d",frog.texture.name);
-    [sceneSpriteBatchNode addChild:frog z:1 tag:kFrogSpriteTagValue];
-    //[sceneSpriteBatchNode addChild:frog.torso];
-    [sceneSpriteBatchNode addChild:frog.footL];
-    [sceneSpriteBatchNode addChild:frog.footR];
+    [sceneSpriteBatchNode addChild:frog z:kFrogZ tag:kFrogSpriteTagValue];
+    [sceneSpriteBatchNode addChild:frog.footL z:kFrogZ];
+    [sceneSpriteBatchNode addChild:frog.footR z:kFrogZ];
 }
 
 -(void)createGround {
