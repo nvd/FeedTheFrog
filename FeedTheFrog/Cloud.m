@@ -40,7 +40,7 @@
     [self setUpMotionWithLocation:ccp( xPosition, yPosition)];
 }
 
-- (void)setupCloudWithInitPosition {
+- (void)setupCloudAtRandomPosition {
     screenSize = [CCDirector sharedDirector].winSize;
     
     float xOffset = [self boundingBox].size.width / 2;
@@ -60,7 +60,7 @@
         [self setFlipX:random()%2];
         
         gameObjectType = kCloud;
-        [self setupCloudWithInitPosition];
+        [self setupCloudAtRandomPosition];
     }
     
     return self;

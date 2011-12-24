@@ -8,6 +8,8 @@
 #import "SimpleQueryCallback.h"
 #import "GameManager.h"
 #import "Frog.h"
+#import "FoodFly.h"
+#import "Bee.h"
 #import "Cloud.h"
 
 @interface Scene1ActionLayer (PrivateMethods)
@@ -23,9 +25,25 @@
     world = new b2World(gravity, doSleep);
 }
 
+-(void)createFlyOfType:(GameObjectType)flyType AtLocation:(CGPoint)location {
+    switch (flyType) {
+        case KFoodFly:
+            fly = [[[FoodFly alloc] initWithWorld:world atLocation:location] autorelease];
+            [sceneSpriteBatchNode addChild:fly z:kFlyZ];
+            break;
+        case kBee:
+            break;
+        case kBulletTimeBonusFly:
+            break;
+        default:
+            CCLOG(@"GameObject other than Fly passed");
+            break;
+    }
+}
+
+
 -(void)createFrogAtLocation:(CGPoint)location {
     frog = [[[Frog alloc] initWithWorld:world atLocation:location] autorelease];
-    CCLOGINFO(@"%d",frog.texture.name);
     [sceneSpriteBatchNode addChild:frog z:kFrogZ tag:kFrogSpriteTagValue];
     [sceneSpriteBatchNode addChild:frog.footL z:kFrogZ];
     [sceneSpriteBatchNode addChild:frog.footR z:kFrogZ];
@@ -150,6 +168,7 @@
         }*/
         
         [self createFrogAtLocation:ccp(winSize.width/2, winSize.width*0.3)];
+        [self createFlyOfType:KFoodFly AtLocation:ccp(winSize.width/4, winSize.width*0.3)];
         [self createLevel];
         
         //Create Clouds
@@ -195,7 +214,6 @@
         }
     }
     
-    //TODO: UNCOMMENT THIS - Clouds causing errors
     CCArray *listOfGameCharacters = [sceneSpriteBatchNode children];
     for (GameCharacter *tempChar in listOfGameCharacters) {
         [tempChar updateStateWithDeltaTime:dt 

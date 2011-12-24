@@ -5,6 +5,8 @@
 
 typedef enum {
     kStateIdle,
+    kStateFlying,
+    kStateFlicking,
     kStateDead
 } CharacterStates;
 

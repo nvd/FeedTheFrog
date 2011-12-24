@@ -38,6 +38,9 @@
 		1D6903FA1481AAAE004A426E /* bg1-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6903F71481AAAE004A426E /* bg1-hd.png */; };
 		1D6903FB1481AAAE004A426E /* bg1-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6903F81481AAAE004A426E /* bg1-ipad.png */; };
 		1D9194D51497F5B300FE5152 /* Cloud.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9194D41497F5B300FE5152 /* Cloud.m */; };
+		1D93006E14A609FD000993D3 /* FoodFly.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D93006D14A609FD000993D3 /* FoodFly.plist */; };
+		1D93007114A628C2000993D3 /* SoundEffects.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D93007014A628C2000993D3 /* SoundEffects.plist */; };
+		1D93D68C14A64C61001214A2 /* Bee.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D93D68B14A64C61001214A2 /* Bee.plist */; };
 		1D94E2B61494E9DB003919B1 /* gameAtlas-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D94E2B41494E9DB003919B1 /* gameAtlas-hd.plist */; };
 		1D94E2B71494E9DB003919B1 /* gameAtlas-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D94E2B51494E9DB003919B1 /* gameAtlas-hd.png */; };
 		1DFA051E1479254A00549AE4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFA051D1479254A00549AE4 /* QuartzCore.framework */; };
@@ -239,6 +242,9 @@
 		1D6903F81481AAAE004A426E /* bg1-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg1-ipad.png"; path = "FeedTheFrog/Images/Scenes/Game/Scene1/Background/bg1-ipad.png"; sourceTree = "<group>"; };
 		1D9194D31497F5B300FE5152 /* Cloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cloud.h; sourceTree = "<group>"; };
 		1D9194D41497F5B300FE5152 /* Cloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cloud.m; sourceTree = "<group>"; };
+		1D93006D14A609FD000993D3 /* FoodFly.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FoodFly.plist; sourceTree = "<group>"; };
+		1D93007014A628C2000993D3 /* SoundEffects.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SoundEffects.plist; sourceTree = "<group>"; };
+		1D93D68B14A64C61001214A2 /* Bee.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Bee.plist; sourceTree = "<group>"; };
 		1D94E2B41494E9DB003919B1 /* gameAtlas-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "gameAtlas-hd.plist"; path = "FeedTheFrog/Images/gameAtlas-hd.plist"; sourceTree = "<group>"; };
 		1D94E2B51494E9DB003919B1 /* gameAtlas-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gameAtlas-hd.png"; path = "FeedTheFrog/Images/gameAtlas-hd.png"; sourceTree = "<group>"; };
 		1DFA05191479254A00549AE4 /* FeedTheFrog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedTheFrog.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -742,7 +748,7 @@
 			isa = PBXGroup;
 			children = (
 				1DFA07071479280900549AE4 /* Images */,
-				1DFA07081479280D00549AE4 /* AnimationPlists */,
+				1DFA07081479280D00549AE4 /* Plists */,
 				1DFA07061479280500549AE4 /* Sounds */,
 				1DFA07091479283800549AE4 /* Src */,
 				1DFA06F51479254D00549AE4 /* RootViewController.h */,
@@ -1228,11 +1234,14 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		1DFA07081479280D00549AE4 /* AnimationPlists */ = {
+		1DFA07081479280D00549AE4 /* Plists */ = {
 			isa = PBXGroup;
 			children = (
+				1D93006D14A609FD000993D3 /* FoodFly.plist */,
+				1D93007014A628C2000993D3 /* SoundEffects.plist */,
+				1D93D68B14A64C61001214A2 /* Bee.plist */,
 			);
-			name = AnimationPlists;
+			name = Plists;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -1378,6 +1387,9 @@
 				1D6903FB1481AAAE004A426E /* bg1-ipad.png in Resources */,
 				1D94E2B61494E9DB003919B1 /* gameAtlas-hd.plist in Resources */,
 				1D94E2B71494E9DB003919B1 /* gameAtlas-hd.png in Resources */,
+				1D93006E14A609FD000993D3 /* FoodFly.plist in Resources */,
+				1D93007114A628C2000993D3 /* SoundEffects.plist in Resources */,
+				1D93D68C14A64C61001214A2 /* Bee.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

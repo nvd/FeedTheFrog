@@ -2,8 +2,14 @@
 //  Constants.h
 //  FeedTheFrog
 //
+
+// Frog
 #define kFrogZ 1
 #define kFrogSpriteTagValue 0
+
+// Flies
+#define FOOD_FLY_POINT_WORTH 10
+#define kFlyZ 5
 
 #define kMainMenuTagValue 10
 
@@ -44,8 +50,6 @@ typedef enum {
 
 // Clouds
 #define NUM_CLOUDS 5
-#define kMaxCloudMoveDuration 15
+#define kMaxCloudMoveDuration 25
 #define kMinCloudMoveDuration 10
-
-
 
