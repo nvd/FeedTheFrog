@@ -27,11 +27,13 @@
 
 -(void)createFlyOfType:(GameObjectType)flyType AtLocation:(CGPoint)location {
     switch (flyType) {
-        case KFoodFly:
+        case kFoodFly:
             fly = [[[FoodFly alloc] initWithWorld:world atLocation:location] autorelease];
             [sceneSpriteBatchNode addChild:fly z:kFlyZ];
             break;
         case kBee:
+            fly = [[[Bee alloc] initWithWorld:world atLocation:location] autorelease];
+            [sceneSpriteBatchNode addChild:fly z:kFlyZ];
             break;
         case kBulletTimeBonusFly:
             break;
@@ -168,7 +170,8 @@
         }*/
         
         [self createFrogAtLocation:ccp(winSize.width/2, winSize.width*0.3)];
-        [self createFlyOfType:KFoodFly AtLocation:ccp(winSize.width/4, winSize.width*0.3)];
+        [self createFlyOfType:kFoodFly AtLocation:ccp(winSize.width/4, winSize.width*0.3)];
+        [self createFlyOfType:kBee AtLocation:ccp(winSize.width*3/4, winSize.width*0.3)];
         [self createLevel];
         
         //Create Clouds

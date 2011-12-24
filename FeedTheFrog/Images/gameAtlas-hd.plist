@@ -95,10 +95,49 @@
                 <key>sourceSize</key>
                 <string>{144,158}</string>
             </dict>
+            <key>ftf_Bee_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{148,190},{73,66}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{73,66}}</string>
+                <key>sourceSize</key>
+                <string>{73,66}</string>
+            </dict>
+            <key>ftf_Bee_2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{223,190},{73,66}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{73,66}}</string>
+                <key>sourceSize</key>
+                <string>{73,66}</string>
+            </dict>
+            <key>ftf_Bee_3.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{298,190},{73,66}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{73,66}}</string>
+                <key>sourceSize</key>
+                <string>{73,66}</string>
+            </dict>
             <key>ftf_FoodFly_1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{148,190},{75,63}}</string>
+                <string>{{373,190},{75,63}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -111,7 +150,7 @@
             <key>ftf_FoodFly_2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{225,190},{75,63}}</string>
+                <string>{{2,350},{75,63}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -124,7 +163,7 @@
             <key>ftf_FoodFly_3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{302,190},{75,63}}</string>
+                <string>{{79,350},{75,63}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -144,7 +183,7 @@
             <key>size</key>
             <string>{512,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:ad07a6985ecf524b8d55487021c2aaf7$</string>
+            <string>$TexturePacker:SmartUpdate:a332b2ade6d59a7dfe7bc11103b920bd$</string>
             <key>textureFileName</key>
             <string>gameAtlas-hd.png</string>
         </dict>

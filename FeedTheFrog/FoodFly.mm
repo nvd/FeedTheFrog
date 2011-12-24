@@ -50,7 +50,7 @@
     if ((self = [super init])) {
         [self setDisplayFrame:[[CCSpriteFrameCache sharedSpriteFrameCache] 
                                 spriteFrameByName:@"ftf_FoodFly_1.png"]];
-        gameObjectType = KFoodFly;
+        gameObjectType = kFoodFly;
         [self createBodyWithWorld:theWorld AtLocation:location];
         [self initAnimations];
         [self changeState:kStateFlying];

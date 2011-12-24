@@ -41,7 +41,8 @@
     wingBeatAnim = [self loadPlistForAnimationWithName:@"wingBeatAnim" 
                                           andClassName:NSStringFromClass([self class])];
     [[CCAnimationCache sharedAnimationCache] addAnimation:wingBeatAnim
-                                                     name:@"wingBeatAnim"];
+                                                     name:[NSString stringWithFormat:@"wingBeatAnim_%@",
+                                                           NSStringFromClass([self class])]];
 }
 
 -(BOOL)isHarmful {

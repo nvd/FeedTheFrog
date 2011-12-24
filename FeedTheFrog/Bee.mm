@@ -20,13 +20,13 @@
     [self setCharacterState:newState];
     switch (newState) {
         case kStateFlying:
-            CCLOG(@"FoodFly->Starting the Flying Animation");
+            CCLOG(@"Bee->Starting the Flying Animation");
             action = [CCRepeatForever actionWithAction:
                       [CCAnimate actionWithAnimation:wingBeatAnim 
                                 restoreOriginalFrame:NO]];
             break;
         default:
-            CCLOG(@"Unhandled state %d in FoodFly", newState);
+            CCLOG(@"Unhandled state %d in Bee", newState);
             break;
     }
     if (action != nil) {
@@ -47,8 +47,8 @@
 - (id)initWithWorld:(b2World *)theWorld atLocation:(CGPoint)location
 {
     if ((self = [super init])) {
-        //[self setDisplayFrame:[[CCSpriteFrameCache sharedSpriteFrameCache] 
-        //                       spriteFrameByName:@"Torso.png"]];
+        [self setDisplayFrame:[[CCSpriteFrameCache sharedSpriteFrameCache] 
+                                spriteFrameByName:@"ftf_Bee_1.png"]];
         gameObjectType = kBee;
         [self createBodyWithWorld:theWorld AtLocation:location];
         [self initAnimations];

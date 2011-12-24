@@ -13,7 +13,7 @@ typedef enum {
 typedef enum{
     kObjectTypeNone,
     kFrog,
-    KFoodFly,
+    kFoodFly,
     kBee,
     kBulletTimeBonusFly,
     kCloud
