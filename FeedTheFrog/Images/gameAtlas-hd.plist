@@ -95,6 +95,45 @@
                 <key>sourceSize</key>
                 <string>{144,158}</string>
             </dict>
+            <key>ftf_FoodFly_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{148,190},{75,63}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{75,63}}</string>
+                <key>sourceSize</key>
+                <string>{75,63}</string>
+            </dict>
+            <key>ftf_FoodFly_2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{225,190},{75,63}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{75,63}}</string>
+                <key>sourceSize</key>
+                <string>{75,63}</string>
+            </dict>
+            <key>ftf_FoodFly_3.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{302,190},{75,63}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{75,63}}</string>
+                <key>sourceSize</key>
+                <string>{75,63}</string>
+            </dict>
         </dict>
         <key>metadata</key>
         <dict>
@@ -105,7 +144,7 @@
             <key>size</key>
             <string>{512,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:d7fbd034d9685d6d645044051555b6ee$</string>
+            <string>$TexturePacker:SmartUpdate:ad07a6985ecf524b8d55487021c2aaf7$</string>
             <key>textureFileName</key>
             <string>gameAtlas-hd.png</string>
         </dict>
