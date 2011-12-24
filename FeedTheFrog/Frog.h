@@ -8,8 +8,8 @@
 @interface Frog : Box2DSprite {
     b2World *world;
     
-    Box2DSprite *footL;
-    Box2DSprite *footR;
+    Box2DSprite * footL;
+    Box2DSprite * footR;
     b2Body * footLBody;
     b2Body * footRBody;
         
@@ -19,12 +19,19 @@
     b2Body * tongueBaseBody;
     b2Body * tongueMidBody;
     b2Body * tongueTipBody;
+    
+    // Open mouth
+    CCAnimation * openMouthAnim;
+    // Idle
+    CCAnimation * idleAnim;
 }
 @property (readonly) Box2DSprite * footL;
 @property (readonly) Box2DSprite * footR;
 @property (readonly) Box2DSprite * tongueBase;
 @property (readonly) Box2DSprite * tongueMid;
 @property (readonly) Box2DSprite * tongueTip;
+@property (nonatomic, retain) CCAnimation * openMouthAnim;
+@property (nonatomic, retain) CCAnimation * idleAnim;
 
 -(id)initWithWorld:(b2World*)world atLocation:(CGPoint)location;
 

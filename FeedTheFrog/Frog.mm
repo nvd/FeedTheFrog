@@ -19,7 +19,14 @@
 @synthesize tongueBase;
 @synthesize tongueMid;
 @synthesize tongueTip;
+@synthesize openMouthAnim;
+@synthesize idleAnim;
 
+- (void) dealloc {
+    [openMouthAnim release];
+    [idleAnim release];
+    [super dealloc];
+}
 
 - (void)createBodyAtLocation:(CGPoint)location {
     b2BodyDef bodyDef;
