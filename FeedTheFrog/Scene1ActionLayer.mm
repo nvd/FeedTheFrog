@@ -25,14 +25,14 @@
     world = new b2World(gravity, doSleep);
 }
 
--(void)createFlyOfType:(GameObjectType)flyType AtLocation:(CGPoint)location {
+-(void)createFlyOfType:(GameObjectType)flyType atLocation:(CGPoint)location {
     switch (flyType) {
         case kFoodFly:
-            fly = [[[FoodFly alloc] initWithWorld:world atLocation:location] autorelease];
+            fly = [[[FoodFly alloc] initWithWorld:world withGround:groundBody atLocation:location] autorelease];
             [sceneSpriteBatchNode addChild:fly z:kFlyZ];
             break;
         case kBee:
-            fly = [[[Bee alloc] initWithWorld:world atLocation:location] autorelease];
+            fly = [[[Bee alloc] initWithWorld:world withGround:groundBody atLocation:location] autorelease];
             [sceneSpriteBatchNode addChild:fly z:kFlyZ];
             break;
         case kBulletTimeBonusFly:
@@ -170,8 +170,8 @@
         }*/
         
         [self createFrogAtLocation:ccp(winSize.width/2, winSize.width*0.3)];
-        [self createFlyOfType:kFoodFly AtLocation:ccp(winSize.width/4, winSize.width*0.3)];
-        [self createFlyOfType:kBee AtLocation:ccp(winSize.width*3/4, winSize.width*0.3)];
+        [self createFlyOfType:kFoodFly atLocation:ccp(winSize.width/4, winSize.width*0.3)];
+        [self createFlyOfType:kBee atLocation:ccp(-winSize.width*1/4, winSize.width*0.6)];
         [self createLevel];
         
         //Create Clouds

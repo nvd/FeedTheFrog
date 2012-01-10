@@ -45,13 +45,13 @@
     [super initAnimations];
 }
 
-- (id)initWithWorld:(b2World *)theWorld atLocation:(CGPoint)location
+- (id)initWithWorld:(b2World *)theWorld withGround:(b2Body*)groundBody atLocation:(CGPoint)location
 {
     if ((self = [super init])) {
         [self setDisplayFrame:[[CCSpriteFrameCache sharedSpriteFrameCache] 
                                 spriteFrameByName:@"ftf_FoodFly_1.png"]];
         gameObjectType = kFoodFly;
-        [self createBodyWithWorld:theWorld AtLocation:location];
+        [self createBodyWithWorld:theWorld withGround:groundBody atLocation:location];
         [self initAnimations];
         [self changeState:kStateFlying];
     }

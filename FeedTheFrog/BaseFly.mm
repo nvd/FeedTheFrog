@@ -15,7 +15,7 @@
 }
 
 #pragma mark -
-- (void)createBodyWithWorld:(b2World*)world AtLocation:(CGPoint)location {
+- (void)createBodyWithWorld:(b2World*)world withGround:(b2Body*)groundBody atLocation:(CGPoint)location {
     b2BodyDef bodyDef;
     bodyDef.type = b2_dynamicBody;
     bodyDef.position = b2Vec2(location.x/PTM_RATIO, location.y/PTM_RATIO);
@@ -35,6 +35,16 @@
     fixtureDef.restitution = 0.5;
     
     body->CreateFixture(&fixtureDef);
+    
+    //Create mouse joint
+    b2MouseJointDef mouseJointDef;
+    mouseJointDef.bodyA = groundBody;
+    mouseJointDef.bodyB = body;
+    mouseJointDef.target = bodyDef.position;
+    mouseJointDef.maxForce = 100 * body->GetMass();
+    mouseJointDef.collideConnected = true;
+    mouseJoint = (b2MouseJoint *) world->CreateJoint(&mouseJointDef);
+    body->SetAwake(true);
 }
 
 - (void)initAnimations {
