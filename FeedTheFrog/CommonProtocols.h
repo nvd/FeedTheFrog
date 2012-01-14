@@ -7,6 +7,7 @@ typedef enum {
     kStateIdle,
     kStateFlying,
     kStateFlicking,
+    kStateBlowingBubble,
     kStateDead
 } CharacterStates;
 

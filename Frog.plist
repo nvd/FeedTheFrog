@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>flickAnim</key>
+	<dict>
+		<key>filenamePrefix</key>
+		<string>flick_</string>
+		<key>delay</key>
+		<string>0.05</string>
+		<key>animationFrames</key>
+		<string>1,2,3,4,5,6,5,4,7,8,2,1</string>
+	</dict>
+	<key>stingAnim</key>
+	<dict>
+		<key>filenamePrefix</key>
+		<string>sting_</string>
+		<key>delay</key>
+		<string>0.15</string>
+		<key>animationFrames</key>
+		<string>1,2,2,3,4,5,6,6,7,8,9</string>
+	</dict>
+	<key>bubbleAnim</key>
+	<dict>
+		<key>filenamePrefix</key>
+		<string>bubble_</string>
+		<key>delay</key>
+		<string>0.1</string>
+		<key>animationFrames</key>
+		<string>1,2,3,4,4,3,2,1</string>
+	</dict>
+</dict>
+</plist>

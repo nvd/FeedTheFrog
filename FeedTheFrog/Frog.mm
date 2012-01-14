@@ -19,12 +19,14 @@
 @synthesize tongueBase;
 @synthesize tongueMid;
 @synthesize tongueTip;
-@synthesize openMouthAnim;
-@synthesize idleAnim;
+@synthesize flickAnim;
+@synthesize bubbleAnim;
+@synthesize stingAnim;
 
 - (void) dealloc {
-    [openMouthAnim release];
-    [idleAnim release];
+    [flickAnim release];
+    [bubbleAnim release];
+    [stingAnim release];
     [super dealloc];
 }
 
@@ -74,11 +76,65 @@
 }
 
 #pragma mark -
+-(void)changeState:(CharacterStates)newState {
+    [self stopAllActions];
+    id action = nil;
+    [self setCharacterState:newState];
+    
+    switch (newState) {
+        case kStateIdle:
+            [self setDisplayFrame:[[CCSpriteFrameCache 
+                                    sharedSpriteFrameCache]
+                                   spriteFrameByName:@"Torso.png"]];
+            break;
+        case kStateFlicking:
+            action = [CCAnimate actionWithAnimation:flickAnim 
+                               restoreOriginalFrame:NO];
+        case kStateBlowingBubble:
+            action = [CCAnimate actionWithAnimation:bubbleAnim 
+                               restoreOriginalFrame:NO];
+            break;
+        case kStateDead:
+            action = [CCAnimate actionWithAnimation:stingAnim 
+                               restoreOriginalFrame:NO];
+            break;
+        default:
+            break;
+    }
+    if (action != nil) {
+        [self runAction:action];
+    }
+}
+
 -(void)updateStateWithDeltaTime:(ccTime)deltaTime 
            andListOfGameObjects:(CCArray *)listOfGameObjects {
+    // Return if dead
+    if (self.characterState == kStateDead) return;
+    
+    // TODO: Check for collisions with tongue
+    
+    if([self numberOfRunningActions] == 0) {
+        // Not playing an animation
+        if (!self.isAlive) {
+            [self changeState:kStateDead];
+        } else if (self.characterState == kStateIdle) {
+            millisecondsStayingIdle = millisecondsStayingIdle + deltaTime;
+            if (millisecondsStayingIdle > kFrogIdleTimer) {
+                [self changeState:kStateBlowingBubble];
+            }
+        } else {
+            millisecondsStayingIdle = 0.0f;
+            [self changeState:kStateIdle];
+        }
+    }
 }
 
 #pragma mark -
+-(void)initAnimations {
+    [self setFlickAnim:[self loadPlistForAnimationWithName:@"flickAnim" andClassName:NSStringFromClass([self class])]];
+    [self setBubbleAnim:[self loadPlistForAnimationWithName:@"bubbleAnim" andClassName:NSStringFromClass([self class])]];
+    [self setStingAnim:[self loadPlistForAnimationWithName:@"stingAnim" andClassName:NSStringFromClass([self class])]];
+}
 
 - (id)initWithWorld:(b2World *)theWorld atLocation:(CGPoint)location
 {
@@ -87,6 +143,8 @@
         [self setDisplayFrame:[[CCSpriteFrameCache sharedSpriteFrameCache] 
                                spriteFrameByName:@"Torso.png"]];
         gameObjectType = kFrog;
+        millisecondsStayingIdle = 0.0f;
+        [self initAnimations];
         [self createBodyAtLocation:location];
         [self createFrog];
     }

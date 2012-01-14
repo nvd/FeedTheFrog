@@ -6,10 +6,21 @@
 #import "GameCharacter.h"
 
 @implementation GameCharacter
+@synthesize isAlive;
 @synthesize characterState;
 
 -(void) dealloc {
     [super dealloc];
+}
+
+- (id)init {
+    if ((self = [super init])) {
+        CCLOG(@"GameCharacter init");
+        isAlive = TRUE;
+        characterState = kStateIdle;
+    }
+    
+    return self;
 }
 
 -(void)checkAndClampSpritePosition {

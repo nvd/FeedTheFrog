@@ -6,6 +6,7 @@
 // Frog
 #define kFrogZ 1
 #define kFrogSpriteTagValue 0
+#define kFrogIdleTimer 4.0f
 
 // Flies
 #define FOOD_FLY_POINT_WORTH 10

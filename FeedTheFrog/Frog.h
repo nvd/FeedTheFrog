@@ -20,18 +20,23 @@
     b2Body * tongueMidBody;
     b2Body * tongueTipBody;
     
-    // Open mouth
-    CCAnimation * openMouthAnim;
-    // Idle
-    CCAnimation * idleAnim;
+    // Open mouth (flick)
+    CCAnimation * flickAnim;
+    // Idle (bubble)
+    CCAnimation * bublbleAnim;
+    // Die (sting)
+    CCAnimation * stingAnim;
+    
+    float millisecondsStayingIdle;
 }
 @property (readonly) Box2DSprite * footL;
 @property (readonly) Box2DSprite * footR;
 @property (readonly) Box2DSprite * tongueBase;
 @property (readonly) Box2DSprite * tongueMid;
 @property (readonly) Box2DSprite * tongueTip;
-@property (nonatomic, retain) CCAnimation * openMouthAnim;
-@property (nonatomic, retain) CCAnimation * idleAnim;
+@property (nonatomic, retain) CCAnimation * flickAnim;
+@property (nonatomic, retain) CCAnimation * bubbleAnim;
+@property (nonatomic, retain) CCAnimation * stingAnim;
 
 -(id)initWithWorld:(b2World*)world atLocation:(CGPoint)location;
 
