@@ -90,6 +90,7 @@
         case kStateFlicking:
             action = [CCAnimate actionWithAnimation:flickAnim 
                                restoreOriginalFrame:NO];
+            break;
         case kStateBlowingBubble:
             action = [CCAnimate actionWithAnimation:bubbleAnim 
                                restoreOriginalFrame:NO];

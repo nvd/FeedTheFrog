@@ -29,6 +29,7 @@
     
     float millisecondsStayingIdle;
 }
+
 @property (readonly) Box2DSprite * footL;
 @property (readonly) Box2DSprite * footR;
 @property (readonly) Box2DSprite * tongueBase;
